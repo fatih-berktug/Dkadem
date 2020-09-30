@@ -1,17 +1,11 @@
 from django.conf.urls import url
 from django.urls import path, include
-from rest_framework.routers import DefaultRouter
-from Game import api
-
-
+from Game import ViewController
 app_name = "Game"
 
 urlpatterns = [
-    #path('', views.index, name='index'),
-    # path('', views.login, name='login'),
-    # path('forgot/', views.forgot, name='forgot'),
+    path('',ViewController.main, name='index'),
 
-    url(r'permission/(?P<pk>\d+)$', views.permission, name='perm'),
 
 
 ]
