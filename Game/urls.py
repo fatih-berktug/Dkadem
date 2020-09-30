@@ -1,10 +1,10 @@
-from django.conf.urls import url
-from django.urls import path, include
-from Game import ViewController
+from django.urls import path
+from Game.viewController import ViewController
+
 app_name = "Game"
 
 urlpatterns = [
-    path('',ViewController.main, name='index'),
+    path('', ViewController.main, name='index'),
 
 
 

@@ -18,7 +18,7 @@ from django.shortcuts import render, redirect
 
 def main(request):
     print('Hello Word ')
-    return render(request,'Main.html')
+    return render(request, 'Main.html')
                   # {'user_form': user_form, 'communication_form': communication_form,
                   #  'person_form': person_form, 'belts_form': belts_form, 'licenses_form': licenses_form,
                   #  'athlete': athlete,'say':say})
